@@ -1,0 +1,889 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f5f5f5;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Heading */
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Buttons and Links */
+.buttons a,
+button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background-color: #2980b9;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons a:hover,
+button:hover {
+  background-color: #3498db;
+}
+
+/* Form Container */
+form {
+  background-color: white;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Inputs */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Links as Nav Menu */
+ul {
+  list-style: none;
+  padding: 0;
+}
+  .logout-btn {
+            float: right;
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+ul li a {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  max-width: 300px;
+  background-color: #34495e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+ul li a:hover {
+  background-color: #2c3e50;
+}
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .book-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .book-card h3 {
+            margin: 0 0 10px;
+            color: #34495e;
+        }
+
+        .book-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .book-card form {
+            margin-top: 15px;
+        }
+
+        .book-card input[type="date"],
+        .book-card input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .book-card button {
+            width: 100%;
+            background-color: #27ae60;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .book-card button:hover {
+            background-color: #219150;
+        }
+        .issue-book-page {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.issue-book-page .back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.issue-book-page h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.issue-book-page .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.issue-book-page .book-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+
+.issue-book-page .book-card:hover {
+    transform: translateY(-5px);
+}
+
+.issue-book-page .book-card h3 {
+    margin: 0 0 10px;
+    color: #34495e;
+}
+
+.issue-book-page .book-card p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.issue-book-page .book-card form {
+    margin-top: 15px;
+}
+
+.issue-book-page .book-card input[type="date"],
+.issue-book-page .book-card input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.issue-book-page .book-card button {
+    width: 100%;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.issue-book-page .book-card button:hover {
+    background-color: #219150;
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        /* Specific container for the renew book page */
+.renew-book-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the renew book page */
+.renew-book-title {
+    text-align: center;
+    color: #5c6bc0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Back button specific to this page */
+.renew-back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.renew-back-btn:hover {
+    background-color: #3f51b5;
+}
+
+/* Table for displaying books available for renewal */
+.renew-book-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.renew-book-table th,
+.renew-book-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.renew-book-table th {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+.renew-book-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.renew-book-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.renew-book-table td {
+    font-size: 14px;
+}
+
+/* Form and button for renewing books */
+.renew-book-form button {
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.renew-book-form button:hover {
+    background-color: #3f51b5;
+}
+        /* Specific container for the return book page */
+.return-book-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the return book page */
+.return-book-title {
+    text-align: center;
+    color: #5c6bc0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Back button specific to this page */
+.return-back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.return-back-btn:hover {
+    background-color: #3f51b5;
+}
+
+/* Table for displaying books available for return */
+.return-book-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.return-book-table th,
+.return-book-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.return-book-table th {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+.return-book-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.return-book-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.return-book-table td {
+    font-size: 14px;
+}
+
+/* Form and button for returning books */
+.return-book-form button {
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.return-book-form button:hover {
+    background-color: #3f51b5;
+}
+        
+        
+        
+        /* Specific container for the search results page */
+.search-results-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the search results page */
+.search-results-title {
+    text-align: center;
+    color: #5c6bc0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Back button specific to this page */
+.search-back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-back-btn:hover {
+    background-color: #3f51b5;
+}
+
+/* Table for displaying search results */
+.search-results-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.search-results-table th,
+.search-results-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.search-results-table th {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+.search-results-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.search-results-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.search-results-table td {
+    font-size: 14px;
+}
+        /* Specific container for the search results page */
+.search-results-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the search results page */
+.search-results-title {
+    text-align: center;
+    color: #5c6bc0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Back button specific to this page */
+.search-back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-back-btn:hover {
+    background-color: #3f51b5;
+}
+
+/* Table for displaying search results */
+.search-results-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.search-results-table th,
+.search-results-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.search-results-table th {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+.search-results-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.search-results-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.search-results-table td {
+    font-size: 14px;
+}
+        
+        
+        
+        /* Specific container for the search page */
+.search-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the search books page */
+.search-title {
+    text-align: center;
+    color: #5c6bc0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Back button specific to this page */
+.search-back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-back-btn:hover {
+    background-color: #3f51b5;
+}
+
+/* Form styling */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Search input field */
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Search button */
+.search-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-submit:hover {
+    background-color: #3f51b5;
+}
+      
+      
+      /* Specific container for the issued books page */
+.issued-books-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the issued books page */
+.issued-books-title {
+    text-align: center;
+    color: #5c6bc0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Back button specific to this page */
+.issued-books-back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.issued-books-back-btn:hover {
+    background-color: #3f51b5;
+}
+
+/* Table for displaying issued books */
+.issued-books-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.issued-books-table th,
+.issued-books-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.issued-books-table th {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+.issued-books-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.issued-books-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.issued-books-table td {
+    font-size: 14px;
+}
+      /* Specific container for the delete book page */
+.delete-book-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the delete book page */
+.delete-book-title {
+    text-align: center;
+    color: #e53935;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Back button specific to this page */
+.delete-book-back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.delete-book-back-btn:hover {
+    background-color: #3f51b5;
+}
+
+/* Table for displaying books */
+.delete-book-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.delete-book-table th,
+.delete-book-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.delete-book-table th {
+    background-color: #5c6bc0;
+    color: white;
+}
+
+.delete-book-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.delete-book-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.delete-book-table td {
+    font-size: 14px;
+}
+
+/* Delete button styling */
+.delete-book-btn {
+    padding: 8px 15px;
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-book-btn:hover {
+    background-color: #d32f2f;
+}
+      /* Specific container for the books list page */
+.books-list-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the books list page */
+.books-list-title {
+    text-align: center;
+    color: #5c6bc0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Back button specific to this page */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: #3f51b5;
+}
+
+/* Table for displaying books */
+.books-list-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.books-list-table th,
+.books-list-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.books-list-table th {
+    background-color: #5c6bc0;
+    color: white;
+}
+
+.books-list-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.books-list-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.books-list-table td {
+    font-size: 14px;
+}
+      
+      
+      
+      /* Container for the issued books page */
+.issued-books-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the issued books page */
+.issued-books-title {
+    text-align: center;
+    color: #5c6bc0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Back button specific to this page */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #5c6bc0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: #3f51b5;
+}
+
+/* Table for displaying issued books */
+.issued-books-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.issued-books-table th,
+.issued-books-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.issued-books-table th {
+    background-color: #5c6bc0;
+    color: white;
+}
+
+.issued-books-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.issued-books-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.issued-books-table td {
+    font-size: 14px;
+}
+        
+        
+        
+        
