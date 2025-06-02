@@ -3,6 +3,7 @@ package com.lib.servlet;
 import java.io.IOException;
 
 import com.lib.dao.StudentDao;
+import com.lib.helper.Connectionprovider;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -16,7 +17,7 @@ public class RenewBookServlet extends HttpServlet {
 			throws ServletException, IOException {
 		int issuedBookId = Integer.parseInt(request.getParameter("issuedBookId"));
 
-		StudentDao dao = new StudentDao();
+		StudentDao dao = new StudentDao(Connectionprovider.getConnection());
 		boolean result = dao.renewBook(issuedBookId);
 
 		if (result) {

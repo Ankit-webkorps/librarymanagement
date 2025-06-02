@@ -35,7 +35,7 @@ public class IssueBookServlet extends HttpServlet {
 			}
 
 			BookDao bookDao = new BookDao(Connectionprovider.getConnection());
-			StudentDao studentDao = new StudentDao();
+			StudentDao studentDao = new StudentDao(Connectionprovider.getConnection());
 
 			Book book = bookDao.getBookById(bookId);
 

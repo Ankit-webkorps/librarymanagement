@@ -1,7 +1,7 @@
 <%@ page language="java" import="java.util.*, com.lib.entities.IssuedBook, com.lib.dao.StudentDao, com.lib.helper.Connectionprovider" %>
 
 <%
-    StudentDao dao = new StudentDao();
+    StudentDao dao = new StudentDao(Connectionprovider.getConnection());
     List<IssuedBook> issuedBooks = dao.getAllIssuedBooksWithDetails();
 %>
 

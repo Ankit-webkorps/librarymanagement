@@ -16,7 +16,7 @@ public class StudentSearchServlet extends HttpServlet {
             throws ServletException, IOException {
 
         String keyword = request.getParameter("keyword");
-        StudentDao dao = new StudentDao();
+        StudentDao dao = new StudentDao(Connectionprovider.getConnection());
         List<Book> books = dao.searchBooks(keyword);
 
         request.setAttribute("books", books);

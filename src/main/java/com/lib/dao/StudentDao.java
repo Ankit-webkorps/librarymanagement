@@ -17,13 +17,8 @@ import com.lib.entities.IssuedBook;
 public class StudentDao {
 	private Connection con;
 
-	public StudentDao() {
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/library", "root", "Root");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+	public StudentDao(Connection con) {
+		this.con = con;
 	}
 
 	public boolean issueBook(int bookId, int studentId, String returnDate, int quantity) {
@@ -94,8 +89,8 @@ public class StudentDao {
 				book.setIssueDate(rs.getDate("issue_date"));
 				book.setReturnDate(rs.getDate("return_date"));
 				book.setBookTitle(rs.getString("book_title"));
-				book.setStudentName(rs.getString("student_name")); // Add this field to your model
-				book.setQuantity(rs.getInt("quantity")); // optional if available
+				book.setStudentName(rs.getString("student_name"));
+				book.setQuantity(rs.getInt("quantity")); 
 
 				list.add(book);
 			}

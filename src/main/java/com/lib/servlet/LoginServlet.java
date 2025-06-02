@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
 			HttpSession session = request.getSession();
 			session.setAttribute("user", user);
 			session.setAttribute("studentId", user.getId());
-
+			session.setAttribute("role", user.getRole());
 			if ("Admin".equalsIgnoreCase(user.getRole())) {
 				response.sendRedirect("admin-dashboard.jsp");
 			} else {
@@ -39,6 +39,6 @@ public class LoginServlet extends HttpServlet {
 		} else {
 			request.setAttribute("error", "Invalid Membership Number or Password");
 			request.getRequestDispatcher("login.jsp").forward(request, response);
-		}
+		} 
 	}
 }

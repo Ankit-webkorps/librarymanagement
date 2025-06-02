@@ -7,7 +7,7 @@
         return;
     }
 
-    StudentDao dao = new StudentDao();
+    StudentDao dao = new StudentDao(Connectionprovider.getConnection());
     List<IssuedBook> issuedBooks = dao.getIssuedBooks(studentId);
 %>
 

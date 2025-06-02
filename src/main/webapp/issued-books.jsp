@@ -7,7 +7,7 @@ if (user == null) {
 }
 
 int studentId = (int) session.getAttribute("studentId");
-    StudentDao dao = new StudentDao();
+    StudentDao dao = new StudentDao(Connectionprovider.getConnection());
     List<IssuedBook> issuedBooks = dao.getIssuedBooks(studentId);
 %>
 <html lang="en">

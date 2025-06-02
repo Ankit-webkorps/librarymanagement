@@ -14,7 +14,7 @@ public class BookDao {
 	public boolean deleteBook(int id) {
 		boolean f = false;
 		try {
-			Statement st = this.con.createStatement();
+			Statement st = con.createStatement();
 
 			st.executeUpdate("DELETE FROM issued_books WHERE book_id=" + id);
 

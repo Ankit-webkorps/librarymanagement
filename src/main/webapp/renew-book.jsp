@@ -7,7 +7,7 @@
         response.sendRedirect("login.jsp");
         return;
     }
-    StudentDao dao = new StudentDao();
+    StudentDao dao = new StudentDao(Connectionprovider.getConnection());
     List<IssuedBook> renewList = dao.getRenewableBooks(user.getId());  
 %>
 

@@ -21,7 +21,7 @@ public class ReturnBookServlet extends HttpServlet {
 		int bookId = Integer.parseInt(request.getParameter("bookId"));
 		int quantity = Integer.parseInt(request.getParameter("quantity"));
 
-		StudentDao studentDao = new StudentDao();
+		StudentDao studentDao = new StudentDao(Connectionprovider.getConnection());
 		BookDao bookDao = new BookDao(Connectionprovider.getConnection());
 
 		boolean success = studentDao.returnBook(issueId);
